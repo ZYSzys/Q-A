@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<display-name></display-name>
+<filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.filter.EncodingFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+    <servlet><!--servlet类路径配置-->
+        <servlet-name>DengluAdminServlet</servlet-name>
+        <servlet-class>com.servlet.DengluAdminServlet</servlet-class>
+    </servlet>
+<servlet><!--servlet类路径配置-->
+    <servlet-name>DengluServlet</servlet-name>
+    <servlet-class>com.servlet.DengluServlet</servlet-class>
+</servlet>
+    <servlet>
+        <servlet-name>AskServlet</servlet-name>
+        <servlet-class>com.servlet.AskServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AnswerServlet</servlet-name>
+        <servlet-class>com.servlet.AnswerServlet</servlet-class>
+    </servlet>
+<servlet>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <servlet-class>com.servlet.ZhuceServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Searchall</servlet-name>
+    <servlet-class>com.servlet.Searchall</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>SearchallAnswer</servlet-name>
+    <servlet-class>com.servlet.SearchallAnswer</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Searchallquestion</servlet-name>
+    <servlet-class>com.servlet.Searchallquestion</servlet-class>
+</servlet>
+    <servlet>
+        <servlet-name>DeleteAnsServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteAnsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteQuesServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteQuesServlet</servlet-class>
+    </servlet>
+<servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteServlet</servlet-class>
+</servlet>
+    <servlet>
+        <servlet-name>UpdateQuesServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateQuesServlet</servlet-class>
+    </servlet>
+<servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateServlet</servlet-class>
+</servlet>
+    <servlet-mapping><!--servlet类映射配置-->
+        <servlet-name>DengluAdminServlet</servlet-name>
+        <url-pattern>/DengluAdminServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping><!--servlet类映射配置-->
+    <servlet-name>DengluServlet</servlet-name>
+    <url-pattern>/DengluServlet</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AskServlet</servlet-name>
+        <url-pattern>/AskServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AnswerServlet</servlet-name>
+        <url-pattern>/AnswerServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <url-pattern>/ZhuceServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Searchall</servlet-name>
+    <url-pattern>/Searchall</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>SearchallAnswer</servlet-name>
+    <url-pattern>/SearchallAnswer</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Searchallquestion</servlet-name>
+    <url-pattern>/Searchallquestion</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteAnsServlet</servlet-name>
+        <url-pattern>/DeleteAnsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteQuesServlet</servlet-name>
+        <url-pattern>/DeleteQuesServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateQuesServlet</servlet-name>
+        <url-pattern>/UpdateQuesServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+</servlet-mapping>
+<welcome-file-list><!--默认首页地址-->
+    <welcome-file>denglu.jsp</welcome-file>
+</welcome-file-list>
+</web-app>

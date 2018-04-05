@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="first:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/first_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="first/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="first" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/src/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/lib/mysql-connector-java-5.1.46-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/lib/standard.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/lib/taglibs-standard-jstlel-1.2.5.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
